@@ -1,0 +1,28 @@
+{
+    "title": "Review",
+    "type":"object",
+    "properties": {
+        "key_themes":{
+            "type": "array",
+            "items":{
+                "type": "string"
+            },
+            "description": "all key points here in a list"
+        },
+        "summary":{
+            "type": "string",
+            "description": "A brief summary of the review"
+        },
+        "sentiment":{
+            "type": "string",
+            "enum": ["pos","neg"],
+            "description":"return sentiment as positive or negative"
+        },
+        "reviewer":{
+            "type":"string",
+            "description":"Reviewer of the given review"
+        }
+    },
+    "required": ["key_themes","summary" ,"sentiment"]
+    
+}
