@@ -45,7 +45,7 @@ When comparing translations across languages with different grammatical structur
 """
 
 parallelChain = RunnableParallel({
-    'summary': prompt1 | model1 | parser,
+    'summary': prompt1 | model1 | parser, #sequential chain parallel chain
     'questions': prompt2 | model2 | parser
 })
 
